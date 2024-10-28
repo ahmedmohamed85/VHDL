@@ -34,7 +34,7 @@ architecture sim of tb_ces_math_fi_abs_square is
 
 begin
     -- Instantiate the unit under test (UUT)
-    uut: entity work.ces_math_fi_abs_square
+    uut: entity ces_math_lib.ces_math_fi_abs_square
         generic map (
             G_OUTPUT_DATA_WIDTH => G_OUTPUT_DATA_WIDTH,
             G_OUTPUT_BIN_POINT  => G_OUTPUT_BIN_POINT

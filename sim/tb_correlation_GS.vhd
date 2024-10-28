@@ -54,7 +54,7 @@ architecture test of tb_correlation_GS is
     second_time_i : in t_complex_array_64;
     rx_signal_i   : in t_complex_array_64;
     delayed_rx_signal_i  : in t_complex_array_64;
-    corr_total_o : out complex_number;
+    corr_total_o : out fi_complex_number;
     dv_o : out std_logic
     );
   end component;
@@ -80,7 +80,7 @@ architecture test of tb_correlation_GS is
   signal first_time_i     : t_complex_array_64;
   signal second_time_i      : t_complex_array_64;
   signal delayed_rx_signal_i : t_complex_array_64;
-  signal corr_total_o : complex_number;
+  signal corr_total_o : fi_complex_number;
   signal corr_total_real_o      : std_logic_vector(31 downto 0);
   signal corr_total_imag_o      : std_logic_vector(31 downto 0);
   signal dv_o                  : std_logic;
